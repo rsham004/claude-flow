@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Foundations - Interactive Demonstrations</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation Header -->
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">OpenCode Foundations</span>
+                </div>
+                <nav class="main-nav">
+                    <button class="nav-btn active" data-demo="variables">Variables & Types</button>
+                    <button class="nav-btn" data-demo="functions">Functions & Control</button>
+                    <button class="nav-btn" data-demo="algorithms">Algorithms</button>
+                    <button class="nav-btn" data-demo="html-css">HTML/CSS</button>
+                    <button class="nav-btn" data-demo="git">Git Workflow</button>
+                    <button class="nav-btn" data-demo="web-project">Web Project</button>
+                </nav>
+                <div class="header-controls">
+                    <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+                    <button class="progress-btn" id="progressBtn" title="View progress">📊</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Progress Tracker -->
+        <div class="progress-tracker" id="progressTracker">
+            <div class="progress-content">
+                <h3>Learning Progress</h3>
+                <div class="progress-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="completedDemos">0</span>
+                        <span class="stat-label">Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="totalTime">0m</span>
+                        <span class="stat-label">Time Spent</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="skillLevel">Beginner</span>
+                        <span class="stat-label">Skill Level</span>
+                    </div>
+                </div>
+                <div class="achievements">
+                    <h4>Achievements</h4>
+                    <div class="achievement-list" id="achievementList">
+                        <!-- Achievements will be dynamically populated -->
+                    </div>
+                </div>
+                <button class="close-progress" id="closeProgress">×</button>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Demo Container -->
+            <div class="demo-container" id="demoContainer">
+                <!-- Demo content will be dynamically loaded here -->
+            </div>
+
+            <!-- Interactive Console -->
+            <div class="console-panel" id="consolePanel">
+                <div class="console-header">
+                    <h3>Interactive Console</h3>
+                    <div class="console-controls">
+                        <button class="console-btn" id="runCode" title="Run code">▶️</button>
+                        <button class="console-btn" id="clearConsole" title="Clear console">🗑️</button>
+                        <select class="language-select" id="languageSelect">
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="console-content">
+                    <div class="code-editor" id="codeEditor" contenteditable="true" spellcheck="false">
+// Welcome to the OpenCode Interactive Console!
+// Try writing some JavaScript code here and click Run ▶️
+
+console.log("Hello, OpenCode! 🚀");
+                    </div>
+                    <div class="console-output" id="consoleOutput">
+                        <div class="output-line">
+                            <span class="timestamp">[00:00:00]</span>
+                            <span class="output-text">Ready to execute code...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Help Panel -->
+        <aside class="help-panel" id="helpPanel">
+            <div class="help-content">
+                <h3>Help & Documentation</h3>
+                <div class="help-section" id="helpContent">
+                    <p>Welcome to the OpenCode Interactive Demonstrations!</p>
+                    <p>Navigate through different topics using the menu above. Each demonstration includes:</p>
+                    <ul>
+                        <li>🎯 <strong>Interactive Examples</strong> - Step through code execution</li>
+                        <li>🔍 <strong>Visual Explanations</strong> - See concepts in action</li>
+                        <li>🛠️ <strong>Hands-on Exercises</strong> - Practice what you learn</li>
+                        <li>📊 <strong>Progress Tracking</strong> - Monitor your advancement</li>
+                    </ul>
+                </div>
+                <div class="help-shortcuts">
+                    <h4>Keyboard Shortcuts</h4>
+                    <div class="shortcut">
+                        <kbd>Ctrl</kbd> + <kbd>Enter</kbd> - Run code
+                    </div>
+                    <div class="shortcut">
+                        <kbd>Ctrl</kbd> + <kbd>/</kbd> - Toggle help
+                    </div>
+                    <div class="shortcut">
+                        <kbd>Tab</kbd> - Navigate between panels
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Floating Action Button -->
+        <button class="fab" id="helpToggle" title="Toggle help panel">❓</button>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+        <p>Loading demonstration...</p>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✅</span>
+            <span class="toast-message">Message here</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/core/app.js"></script>
+    <script src="js/core/demo-loader.js"></script>
+    <script src="js/core/console-engine.js"></script>
+    <script src="js/core/progress-tracker.js"></script>
+    <script src="js/demonstrations/variables-demo.js"></script>
+    <script src="js/demonstrations/functions-demo.js"></script>
+    <script src="js/demonstrations/algorithms-demo.js"></script>
+    <script src="js/demonstrations/html-css-demo.js"></script>
+    <script src="js/demonstrations/git-demo.js"></script>
+    <script src="js/demonstrations/web-project-demo.js"></script>
+    <script>
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', () => {
+            OpenCodeApp.init();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+/* OpenCode Interactive Demonstrations - Theme Styles */
+
+/* Dark Theme */
+[data-theme="dark"] {
+  /* Background Colors */
+  --bg-primary: var(--gray-900);
+  --bg-secondary: var(--gray-800);
+  --bg-tertiary: var(--gray-700);
+  --bg-dark: var(--gray-800);
+  --bg-darker: #0d1117;
+  
+  /* Text Colors */
+  --text-primary: #f8f9fa;
+  --text-secondary: var(--gray-300);
+  --text-muted: var(--gray-400);
+  --text-inverse: var(--gray-900);
+  
+  /* Border Colors */
+  --border-light: var(--gray-700);
+  --border-medium: var(--gray-600);
+  --border-dark: var(--gray-500);
+  
+  /* Component-specific adjustments */
+  --console-bg: #0d1117;
+  --console-output-bg: #161b22;
+}
+
+[data-theme="dark"] .main-header {
+  background: var(--bg-primary);
+  border-bottom-color: var(--border-light);
+}
+
+[data-theme="dark"] .code-editor {
+  background: var(--console-bg);
+  color: #f8f8f2;
+}
+
+[data-theme="dark"] .console-output {
+  background: var(--console-output-bg);
+  color: #e6edf3;
+}
+
+[data-theme="dark"] .loading-spinner {
+  background: rgba(17, 24, 39, 0.8);
+}
+
+/* High Contrast Theme */
+[data-theme="high-contrast"] {
+  --primary-color: #0066cc;
+  --primary-dark: #0052a3;
+  --secondary-color: #ff6600;
+  --accent-color: #ffaa00;
+  --success-color: #009900;
+  --warning-color: #ff9900;
+  --error-color: #cc0000;
+  
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0f0f0;
+  --bg-tertiary: #e0e0e0;
+  --bg-dark: #333333;
+  --bg-darker: #000000;
+  
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --text-muted: #666666;
+  --text-inverse: #ffffff;
+  
+  --border-light: #666666;
+  --border-medium: #333333;
+  --border-dark: #000000;
+}
+
+[data-theme="high-contrast"] button,
+[data-theme="high-contrast"] .nav-btn,
+[data-theme="high-contrast"] .console-btn {
+  border: 2px solid var(--text-primary);
+  font-weight: 600;
+}
+
+[data-theme="high-contrast"] .nav-btn.active {
+  background: var(--text-primary);
+  color: var(--text-inverse);
+  border-color: var(--text-primary);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .spinner {
+    animation: none;
+  }
+}
+
+/* Font Size Preferences */
+[data-font-size="small"] {
+  font-size: 14px;
+}
+
+[data-font-size="large"] {
+  font-size: 18px;
+}
+
+[data-font-size="extra-large"] {
+  font-size: 20px;
+}
+
+/* Theme Transition */
+* {
+  transition: background-color var(--transition-fast),
+              color var(--transition-fast),
+              border-color var(--transition-fast);
+}
+
+/* Custom Theme Variables for Code Syntax Highlighting */
+
+/* Light Theme Syntax */
+:root {
+  --syntax-bg: #f8f9fa;
+  --syntax-text: #24292e;
+  --syntax-comment: #6a737d;
+  --syntax-keyword: #d73a49;
+  --syntax-string: #032f62;
+  --syntax-number: #005cc5;
+  --syntax-function: #6f42c1;
+  --syntax-variable: #e36209;
+  --syntax-operator: #d73a49;
+  --syntax-bracket: #24292e;
+}
+
+/* Dark Theme Syntax */
+[data-theme="dark"] {
+  --syntax-bg: #0d1117;
+  --syntax-text: #f8f8f2;
+  --syntax-comment: #6272a4;
+  --syntax-keyword: #ff79c6;
+  --syntax-string: #f1fa8c;
+  --syntax-number: #bd93f9;
+  --syntax-function: #50fa7b;
+  --syntax-variable: #ffb86c;
+  --syntax-operator: #ff79c6;
+  --syntax-bracket: #f8f8f2;
+}
+
+/* High Contrast Syntax */
+[data-theme="high-contrast"] {
+  --syntax-bg: #ffffff;
+  --syntax-text: #000000;
+  --syntax-comment: #666666;
+  --syntax-keyword: #0000ff;
+  --syntax-string: #008000;
+  --syntax-number: #800080;
+  --syntax-function: #ff8000;
+  --syntax-variable: #ff0000;
+  --syntax-operator: #0000ff;
+  --syntax-bracket: #000000;
+}
+
+/* Apply syntax highlighting colors */
+.code-editor {
+  background: var(--syntax-bg);
+  color: var(--syntax-text);
+}
+
+.code-editor .comment { color: var(--syntax-comment); }
+.code-editor .keyword { color: var(--syntax-keyword); font-weight: bold; }
+.code-editor .string { color: var(--syntax-string); }
+.code-editor .number { color: var(--syntax-number); }
+.code-editor .function { color: var(--syntax-function); }
+.code-editor .variable { color: var(--syntax-variable); }
+.code-editor .operator { color: var(--syntax-operator); }
+.code-editor .bracket { color: var(--syntax-bracket); }
+
+/* Theme-specific component styles */
+.demo-visualization {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+}
+
+.step-indicator {
+  background: var(--primary-color);
+  color: var(--text-inverse);
+}
+
+.step-indicator.completed {
+  background: var(--success-color);
+}
+
+.step-indicator.current {
+  background: var(--accent-color);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Interactive elements theming */
+.interactive-button {
+  background: var(--primary-color);
+  color: var(--text-inverse);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.interactive-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.interactive-button:active {
+  transform: translateY(0);
+}
+
+.interactive-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Algorithm visualization theming */
+.algorithm-step {
+  background: var(--bg-secondary);
+  border: 2px solid transparent;
+  transition: all var(--transition-normal);
+}
+
+.algorithm-step.active {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--text-inverse);
+}
+
+.algorithm-step.comparing {
+  border-color: var(--warning-color);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.algorithm-step.swapping {
+  border-color: var(--error-color);
+  background: rgba(239, 68, 68, 0.1);
+  animation: shake 0.3s ease-in-out;
+}
+
+.algorithm-step.sorted {
+  border-color: var(--success-color);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+}
+
+/* Progress bar theming */
+.progress-bar {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 8px;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  height: 100%;
+  transition: width var(--transition-normal);
+  border-radius: var(--radius-md);
+}
+
+/* Code diff theming */
+.code-diff .addition {
+  background: rgba(16, 185, 129, 0.1);
+  border-left: 3px solid var(--success-color);
+}
+
+.code-diff .deletion {
+  background: rgba(239, 68, 68, 0.1);
+  border-left: 3px solid var(--error-color);
+}
+
+.code-diff .modification {
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 3px solid var(--warning-color);
+}
+
+/* Quiz/exercise theming */
+.quiz-option {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.quiz-option:hover {
+  border-color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.quiz-option.selected {
+  border-color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.quiz-option.correct {
+  border-color: var(--success-color);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.quiz-option.incorrect {
+  border-color: var(--error-color);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* Terminal theming */
+.terminal {
+  background: var(--bg-darker);
+  color: #00ff00;
+  font-family: var(--font-family-mono);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.terminal .prompt {
+  color: #00aaff;
+}
+
+.terminal .command {
+  color: #ffffff;
+}
+
+.terminal .output {
+  color: #cccccc;
+}
+
+.terminal .error {
+  color: #ff4444;
+}
+
+.terminal .success {
+  color: #00ff00;
+}
+
+/* Responsive theme adjustments */
+@media (max-width: 768px) {
+  :root {
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+  }
+  
+  .fab {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+}

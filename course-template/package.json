@@ -1,0 +1,163 @@
+{
+  "name": "software-development-course-template",
+  "version": "1.0.0",
+  "description": "A comprehensive software development course template with progressive skill levels from beginner to expert",
+  "main": "index.js",
+  "scripts": {
+    "start": "node tools/course-runner.js",
+    "verify-setup": "node tools/setup-verification.js",
+    "verify-setup-python": "python tools/setup-verification.py",
+    "test": "npm run test:js && npm run test:python",
+    "test:js": "jest --config jest.config.js",
+    "test:python": "python -m pytest tests/",
+    "lint": "eslint common/code-examples/*.js tools/*.js",
+    "lint:fix": "eslint common/code-examples/*.js tools/*.js --fix",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "typecheck": "tsc --noEmit --allowJs true common/code-examples/*.js",
+    "build": "npm run lint && npm run test && npm run build:docs",
+    "build:docs": "node tools/generate-docs.js",
+    "dev": "nodemon tools/course-runner.js",
+    "clean": "rimraf node_modules package-lock.json && npm install",
+    "create-lesson": "node tools/create-lesson.js",
+    "create-exercise": "node tools/create-exercise.js",
+    "create-project": "node tools/create-project.js",
+    "validate-structure": "node tools/validate-structure.js",
+    "generate-progress": "node tools/generate-progress.js",
+    "deploy": "npm run build && npm run deploy:docs",
+    "deploy:docs": "echo 'Deploy documentation to hosting platform'",
+    "audit": "npm audit && npm audit fix",
+    "update-deps": "npm update && npm audit fix"
+  },
+  "keywords": [
+    "education",
+    "programming",
+    "course",
+    "template",
+    "javascript",
+    "python",
+    "software-development",
+    "learning",
+    "tutorial",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "expert"
+  ],
+  "author": {
+    "name": "Course Template Team",
+    "email": "template@example.com",
+    "url": "https://example.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/example/software-development-course-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/example/software-development-course-template/issues"
+  },
+  "homepage": "https://github.com/example/software-development-course-template#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "inquirer": "^8.2.5",
+    "marked": "^4.2.3",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.0.3",
+    "axios": "^1.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.15",
+    "typescript": "^4.9.4",
+    "jest": "^29.3.1",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "eslint": "^8.28.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.8.1",
+    "rimraf": "^3.0.2",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.3",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "lcov", "html"],
+    "testMatch": [
+      "**/tests/**/*.test.js",
+      "**/tests/**/*.spec.js"
+    ],
+    "collectCoverageFrom": [
+      "common/**/*.js",
+      "tools/**/*.js",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ]
+  },
+  "eslintConfig": {
+    "extends": ["standard"],
+    "env": {
+      "node": true,
+      "jest": true,
+      "browser": true
+    },
+    "rules": {
+      "no-console": "off",
+      "space-before-function-paren": ["error", "never"]
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "printWidth": 100
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "course": {
+      "name": "Software Development Course",
+      "version": "1.0.0",
+      "modules": [
+        "01-fundamentals",
+        "02-intermediate", 
+        "03-advanced",
+        "04-expert"
+      ],
+      "languages": ["javascript", "python", "java", "csharp", "go", "rust"],
+      "defaultLanguage": "javascript"
+    }
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  }
+}

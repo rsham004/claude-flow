@@ -1,0 +1,146 @@
+# Video Content: Ghost CMS Refactoring Live (60 seconds)
+
+## Simulated Video Transcript & Screen Content
+
+[00:00] NARRATOR: "Let's modernize callback hell in Ghost CMS"
+
+[00:05] SCREEN SHOWS:
+```
+$ cd Ghost/core/server/api/canary/
+$ cat posts.js | head -30
+```
+
+[00:08] SCREEN CONTENT:
+```javascript
+// LEGACY CALLBACK PATTERN - GHOST CMS
+exports.browse = function browse(options, callback) {
+    var tasks = {
+        posts: function(cb) {
+            models.Post.findPage(options, function(err, result) {
+                if (err) {
+                    return cb(err);
+                }
+                cb(null, result);
+            });
+        },
+        meta: function(cb) {
+            models.Post.count(options, function(err, count) {
+                if (err) {
+                    return cb(err);
+                }
+                cb(null, {pagination: {total: count}});
+            });
+        }
+    };
+    
+    async.parallel(tasks, function(err, results) {
+        if (err) {
+            return callback(err);
+        }
+        callback(null, {
+            posts: results.posts,
+            meta: results.meta
+        });
+    });
+};
+```
+
+[00:12] NARRATOR: "Here's the legacy callback pattern we need to fix"
+
+[00:15] SCREEN HIGHLIGHTS:
+- Red boxes around nested callbacks
+- Arrow pointing to callback hell structure
+- "3 levels deep!" annotation
+
+[00:20] TYPED: `opencode`
+[00:22] TYPED: `/mode build`
+[00:24] TYPED: `Convert this callback function to async/await`
+
+[00:27] SCREEN SHOWS:
+```
+🤖 I'll modernize this callback pattern to async/await...
+
+Analyzing callback structure:
+✓ Parallel async operations detected
+✓ Error handling patterns identified  
+✓ Return value structure preserved
+
+Converting to modern async/await...
+```
+
+[00:32] SCREEN SHOWS (MODERNIZED CODE):
+```javascript
+// MODERNIZED ASYNC/AWAIT PATTERN
+exports.browse = async function browse(options) {
+    try {
+        // Execute operations in parallel using Promise.all
+        const [posts, count] = await Promise.all([
+            models.Post.findPage(options),
+            models.Post.count(options)
+        ]);
+        
+        return {
+            posts: posts,
+            meta: {
+                pagination: {
+                    total: count
+                }
+            }
+        };
+    } catch (error) {
+        // Centralized error handling
+        throw error;
+    }
+};
+```
+
+[00:40] NARRATOR: "Before and after comparison"
+
+[00:42] SCREEN SHOWS (SPLIT VIEW):
+```
+BEFORE (Callbacks):           │  AFTER (Async/Await):
+─────────────────────────────  │  ─────────────────────────────
+• 32 lines of code            │  • 16 lines of code
+• 3 levels of nesting         │  • 1 level of nesting  
+• Complex error handling      │  • Simple try/catch
+• Hard to read/maintain       │  • Clear, linear flow
+• Callback hell pattern       │  • Modern JavaScript
+
+function(err, cb) {           │  async function() {
+  if (err) return cb(err);    │    try { ... } 
+  cb(null, result);           │    catch (error) { ... }
+}                             │  }
+```
+
+[00:50] SCREEN SHOWS:
+```
+✓ File updated: posts.js
+✓ Callbacks → async/await conversion complete
+✓ Error handling modernized
+✓ Same functionality, modern patterns
+✓ 50% reduction in code complexity
+
+Testing modernized function...
+✓ All tests pass
+✓ Performance improved (parallel execution preserved)
+```
+
+[00:55] NARRATOR: "200,000 lines modernized, one function at a time"
+
+[00:58] SCREEN SHOWS:
+```
+Ghost CMS Modernization Progress:
+▓▓▓▓▓░░░░░ 23% complete
+Functions modernized: 127/550
+Callback patterns eliminated: 89
+Performance improvement: 15%
+```
+
+[01:00] END
+
+## Key Learning Points Demonstrated:
+✓ Real callback hell modernization
+✓ Async/await conversion preserving functionality
+✓ Parallel execution with Promise.all
+✓ Error handling improvement
+✓ Dramatic code simplification (32→16 lines)

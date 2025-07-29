@@ -1,0 +1,88 @@
+# Video Content: OpenCode.ai First Connection (60 seconds)
+
+## Simulated Video Transcript & Screen Content
+
+[00:00] NARRATOR: "Let's connect to OpenCode.ai for the first time"
+
+[00:05] SCREEN SHOWS:
+```
+$ opencode
+🚀 OpenCode.ai v2.1.0 starting...
+✓ Loading providers: OpenAI, Anthropic, Google AI
+✓ Terminal integration ready
+✓ Build mode enabled
+
+Welcome to OpenCode.ai! Type /help for commands.
+>
+```
+
+[00:15] NARRATOR: "First, let's test OpenAI connection"
+[00:16] TYPED: `/provider openai`
+[00:18] TYPED: `Hello, can you confirm you're working?`
+
+[00:20] SCREEN SHOWS:
+```
+🤖 OpenAI GPT-4 responding...
+
+Hello! Yes, I'm working perfectly. I'm Claude Code, powered by OpenAI's GPT-4, 
+ready to assist you with programming tasks. I can help with:
+- Code generation and refactoring
+- Debugging and optimization  
+- Architecture planning
+- Code review and analysis
+
+What programming task would you like to work on?
+```
+
+[00:25] NARRATOR: "Now let's try Anthropic"
+[00:26] TYPED: `/provider anthropic`
+[00:28] TYPED: `Hello, can you confirm you're working?`
+
+[00:30] SCREEN SHOWS:
+```
+🤖 Anthropic Claude responding...
+
+Hello! I'm Claude, powered by Anthropic's language model. I'm functioning 
+correctly and ready to help with your development work. I excel at:
+- Detailed code analysis
+- Safe refactoring practices
+- Complex debugging scenarios
+- Technical documentation
+
+I'm here to make your coding more efficient and effective!
+```
+
+[00:35] NARRATOR: "Perfect! Both providers responding"
+[00:36] TYPED: `/provider openai`
+[00:38] TYPED: `/provider anthropic`
+[00:40] TYPED: `/provider openai`
+
+[00:42] SCREEN SHOWS:
+```
+Provider Status:
+✓ OpenAI GPT-4    [ACTIVE]
+✓ Anthropic Claude [Available]
+✓ Google AI       [Available]
+
+Quick switching: /provider <name>
+```
+
+[00:45] NARRATOR: "You now have working multi-provider AI assistance"
+
+[00:50] SCREEN SHOWS:
+```
+> /status
+Connected Providers: 3/3
+Active Provider: OpenAI GPT-4
+Build Mode: ✓ Enabled
+Ready for professional development!
+```
+
+[01:00] END
+
+## Key Learning Points Demonstrated:
+✓ OpenCode.ai startup process
+✓ Provider connection testing  
+✓ Multi-provider switching
+✓ Status verification
+✓ Ready for real development work

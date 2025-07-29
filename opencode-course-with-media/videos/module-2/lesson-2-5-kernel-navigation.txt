@@ -1,0 +1,156 @@
+# Video Content: Linux Kernel Navigation (60 seconds)
+
+## Simulated Video Transcript & Screen Content
+
+[00:00] NARRATOR: "Navigating 500,000+ lines: Linux kernel networking"
+
+[00:05] SCREEN SHOWS:
+```
+$ cd linux/net/
+$ ls -la
+total 156
+drwxr-xr-x  25 user user  4096 Dec 15 10:30 .
+drwxr-xr-x  12 user user  4096 Dec 15 10:25 ..
+drwxr-xr-x   2 user user  4096 Dec 15 10:30 802/
+drwxr-xr-x   3 user user  4096 Dec 15 10:30 appletalk/
+drwxr-xr-x   4 user user  4096 Dec 15 10:30 bluetooth/
+drwxr-xr-x   2 user user  4096 Dec 15 10:30 bridge/
+drwxr-xr-x   4 user user  4096 Dec 15 10:30 core/
+drwxr-xr-x   3 user user  4096 Dec 15 10:30 ipv4/     ← TCP stack
+drwxr-xr-x   3 user user  4096 Dec 15 10:30 ipv6/
+...
+[34 more networking subsystem directories]
+```
+
+[00:08] TYPED: `opencode`
+
+[00:10] SCREEN SHOWS:
+```
+🚀 OpenCode.ai analyzing Linux kernel...
+📊 Codebase size: 5.2M+ lines across 47,000 files
+🔍 Networking subsystem: 547,832 lines in 1,247 files
+⚡ Analysis complete - Ready for navigation!
+```
+
+[00:12] TYPED: `Help me understand the TCP congestion control system`
+
+[00:15] SCREEN SHOWS:
+```
+🤖 Analyzing TCP congestion control in Linux kernel...
+
+TCP Congestion Control Architecture:
+
+📁 Key Files Located:
+• net/ipv4/tcp_cong.c         ← Registration system
+• net/ipv4/tcp_cubic.c        ← CUBIC algorithm (default)
+• net/ipv4/tcp_bbr.c          ← BBR algorithm (Google)
+• include/net/tcp.h           ← Core structures
+
+🏗️ Core Structure:
+```c
+struct tcp_congestion_ops {
+    void (*init)(struct sock *sk);
+    void (*release)(struct sock *sk);  
+    u32  (*ssthresh)(struct sock *sk);
+    void (*cong_avoid)(struct sock *sk, u32 ack, u32 acked);
+    // ... more function pointers
+};
+```
+
+🔧 Registration: tcp_register_congestion_control()
+💡 Default: CUBIC (since kernel 2.6.19)
+```
+
+[00:25] TYPED: `Show me how Cubic algorithm works`
+
+[00:28] SCREEN SHOWS:
+```
+🤖 Analyzing CUBIC congestion control algorithm...
+
+Location: net/ipv4/tcp_cubic.c (312 lines)
+
+Key Function: bictcp_cong_avoid()
+```c
+static void bictcp_cong_avoid(struct sock *sk, u32 ack, u32 acked)
+{
+    struct tcp_sock *tp = tcp_sk(sk);
+    struct bictcp *ca = inet_csk_ca(sk);
+
+    if (!tcp_is_cwnd_limited(sk))
+        return;
+
+    if (tcp_in_slow_start(tp)) {
+        /* Slow start phase */
+        acked = tcp_slow_start(tp, acked);
+        if (!acked)
+            return;
+    }
+    
+    /* Congestion avoidance using cubic function */
+    bictcp_update(ca, tp->snd_cwnd, acked);
+}
+```
+
+CUBIC Algorithm Logic:
+1. Uses cubic function for window growth
+2. TCP-friendly when competing with Reno
+3. Aggressive in high-bandwidth networks
+4. Beta = 0.7 (multiplicative decrease)
+```
+
+[00:40] SCREEN SHOWS:
+```
+🧠 CUBIC State Management:
+
+Per-connection state (struct bictcp):
+• epoch_start     ← When current epoch began
+• ack_cnt        ← ACK counter  
+• tcp_cwnd       ← cwnd at last loss
+• origin_point   ← Window size at loss
+• delay_min      ← Minimum RTT observed
+
+Window calculation uses:
+W(t) = C(t - K)³ + Wmax
+
+Where:
+• C = scaling factor (0.4)
+• K = time to reach Wmax without loss
+• Wmax = window size at last loss event
+```
+
+[00:50] NARRATOR: "AI makes massive codebases comprehensible"
+
+[00:52] SCREEN SHOWS:
+```
+🎯 Kernel Navigation Summary:
+
+Total analyzed: 547,832 lines in networking
+Time to understand TCP congestion control: 45 seconds
+Manual exploration equivalent: 8-12 hours
+
+Key insights discovered:
+✓ 12 different congestion control algorithms available
+✓ CUBIC default since 2006 (kernel 2.6.19)
+✓ Pluggable architecture via tcp_congestion_ops
+✓ Per-socket algorithm selection possible
+
+Next: Explore BBR, Reno, or implement custom algorithm?
+```
+
+[00:58] SCREEN SHOWS:
+```
+💡 Pro Tip: AI transforms 500k+ line exploration from
+    days of manual reading into minutes of guided discovery
+
+Ready to navigate any subsystem: filesystems, memory 
+management, schedulers, device drivers...
+```
+
+[01:00] END
+
+## Key Learning Points Demonstrated:
+✓ Massive codebase navigation (500k+ lines)
+✓ Complex algorithm understanding in minutes
+✓ Kernel structure and organization comprehension
+✓ Deep technical insights from production code
+✓ Time savings: hours → minutes of exploration

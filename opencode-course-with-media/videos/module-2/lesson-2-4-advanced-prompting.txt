@@ -1,0 +1,57 @@
+# Video: Advanced Prompting - Kubernetes Operator Development (1 minute)
+
+## Scenario: Complex Kubernetes Controller Implementation
+
+**[0:00-0:15] Complex Development Challenge**
+Developer: "I need to build a Kubernetes operator for database backup automation. This requires deep Kubernetes internals knowledge and Go programming expertise."
+
+Terminal: `opencode`
+Developer: "I'm going to use advanced prompting techniques to build a production-ready Kubernetes operator."
+
+**[0:15-0:35] Multi-Stage Prompting Strategy**
+Developer: "First, let me use a discovery prompt:"
+
+Prompt: "Analyze the controller-runtime framework and design a DatabaseBackup custom resource definition that follows Kubernetes best practices. Include validation, status conditions, and reconciliation strategy."
+
+OpenCode: *Advanced analysis*
+"Analyzing controller-runtime patterns...
+- CRD Design: DatabaseBackup with spec (database config, schedule, storage) and status (lastBackup, conditions, phase)
+- Controller Pattern: Watch DatabaseBackup resources, reconcile desired state
+- Validation: OpenAPI schema with required fields, format validation
+- Status Management: Ready, InProgress, Failed conditions with detailed messages"
+
+**[0:35-0:50] Implementation-Focused Prompting**
+Developer: "Now implementation prompt with specific constraints:"
+
+Prompt: "Generate the complete Go controller code using controller-runtime v0.15. Include: 1) Proper RBAC markers, 2) Finalizer handling for cleanup, 3) Status condition management, 4) Error handling with exponential backoff, 5) Observability with structured logging and metrics."
+
+OpenCode: *Generates production code*
+"Creating operator files:
+- api/v1/databasebackup_types.go (CRD definition)
+- controllers/databasebackup_controller.go (reconciliation logic)  
+- config/rbac/role.yaml (RBAC permissions)
+- main.go (manager setup with metrics)"
+
+**[0:50-0:60] Validation and Testing Prompt**
+Developer: "Final prompt for quality assurance:"
+
+Prompt: "Generate comprehensive tests including unit tests for controller logic, integration tests with envtest, and end-to-end scenarios. Include negative test cases for error handling and edge conditions."
+
+OpenCode: "Test suite created:
+- controllers/suite_test.go (test environment setup)
+- controllers/databasebackup_controller_test.go (reconciliation tests)
+- e2e/backup_operator_test.go (end-to-end scenarios)
+Coverage: 94% with all error paths tested"
+
+Developer: "Advanced prompting just generated a complete, production-ready Kubernetes operator with tests and documentation."
+
+## Key Learning Points:
+1. **Multi-Stage Prompting**: Breaking complex tasks into discovery → design → implementation → validation
+2. **Context-Rich Prompts**: Including specific versions, frameworks, and requirements  
+3. **Quality Gates**: Each prompt builds on previous results with quality requirements
+4. **Production Standards**: Prompts specify observability, error handling, and testing requirements
+
+## Real Impact:
+- **Manual Development**: 2-3 weeks for experienced Kubernetes developer
+- **AI-Assisted Development**: 2-3 days with comprehensive prompting strategy  
+- **Quality**: Production-ready code meeting Kubernetes operator best practices

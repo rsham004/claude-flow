@@ -1,0 +1,134 @@
+# Video Content: FastAPI Codebase Analysis (60 seconds)
+
+## Simulated Video Transcript & Screen Content
+
+[00:00] NARRATOR: "Let's analyze a real 25,000 line codebase"
+
+[00:05] SCREEN SHOWS:
+```
+$ cd fastapi/
+$ ls -la
+total 156
+drwxr-xr-x  12 user user   4096 Dec 15 10:30 .
+drwxr-xr-x   3 user user   4096 Dec 15 10:25 ..
+drwxr-xr-x   8 user user   4096 Dec 15 10:30 .git
+-rw-r--r--   1 user user   1234 Dec 15 10:30 LICENSE
+-rw-r--r--   1 user user   8904 Dec 15 10:30 README.md
+drwxr-xr-x   3 user user   4096 Dec 15 10:30 fastapi/
+drwxr-xr-x   2 user user   4096 Dec 15 10:30 tests/
+-rw-r--r--   1 user user   2341 Dec 15 10:30 pyproject.toml
+```
+
+[00:08] TYPED: `opencode`
+
+[00:10] SCREEN SHOWS:
+```
+🚀 OpenCode.ai initializing...
+📁 Analyzing codebase: FastAPI
+📊 Files detected: 234 Python files
+📈 Lines of code: ~25,847
+⚡ Analysis complete!
+```
+
+[00:12] TYPED: `/init`
+
+[00:15] SCREEN SHOWS:
+```
+🔍 Codebase Analysis Results:
+
+Project: FastAPI Web Framework
+Language: Python (98.2%)
+Architecture: Modern async web framework
+Key Dependencies: Starlette, Pydantic, typing-extensions
+
+✓ Codebase indexed and ready for queries
+```
+
+[00:18] TYPED: `What are the 3 main architectural components?`
+
+[00:22] SCREEN SHOWS:
+```
+🤖 Analyzing FastAPI's architecture...
+
+The 3 main architectural components of FastAPI are:
+
+1. **FastAPI Class (Core Routing)**
+   - Location: fastapi/applications.py
+   - Purpose: Main application class, handles routing and middleware
+   - Key methods: add_api_route(), include_router()
+
+2. **Dependency Injection System**  
+   - Location: fastapi/dependencies/
+   - Purpose: Manages request dependencies and parameter validation
+   - Key files: utils.py, models.py
+
+3. **Request/Response Handling**
+   - Location: fastapi/routing.py
+   - Purpose: HTTP request processing and response serialization
+   - Integration: Works with Starlette's ASGI foundation
+
+These components work together to provide the fast, automatic API documentation
+and type-safe development experience FastAPI is known for.
+```
+
+[00:30] TYPED: `Show me how routing works`
+
+[00:33] SCREEN SHOWS:
+```
+🤖 Let me show you FastAPI's routing mechanism:
+
+Key File: fastapi/routing.py (lines 1-50)
+
+```python
+class APIRoute(Route):
+    def __init__(
+        self,
+        path: str,
+        endpoint: Callable[..., Any],
+        *,
+        response_model: Any = Default(None),
+        status_code: Optional[int] = None,
+        # ...more parameters
+    ):
+        # Route initialization logic
+```
+
+The routing works by:
+1. Decorator (@app.get, @app.post) creates APIRoute instances
+2. Routes are registered in the FastAPI application
+3. Request matching happens in route_handler()
+4. Dependencies are resolved automatically
+5. Response is serialized based on response_model
+
+Example flow: HTTP Request → Route Match → Dependency Resolution → 
+Endpoint Execution → Response Serialization
+```
+
+[00:45] NARRATOR: "In 30 seconds, we understood a massive codebase"
+
+[00:48] SCREEN SHOWS:
+```
+📊 FastAPI Codebase Map:
+
+fastapi/
+├── applications.py     ← 🎯 Main FastAPI class
+├── routing.py         ← 🎯 Request routing  
+├── dependencies/      ← 🎯 Dependency injection
+│   ├── utils.py
+│   └── models.py
+├── security/          ← Authentication
+├── middleware/        ← Request middleware
+└── responses.py       ← Response handling
+
+Key insight: 25k lines organized into clear, focused modules
+AI analysis time: 30 seconds vs hours of manual exploration
+```
+
+[01:00] END
+
+## Key Learning Points Demonstrated:
+✓ AI-powered codebase analysis in seconds
+✓ Understanding complex architecture quickly
+✓ Navigation to specific implementation details
+✓ Practical insights from real production code
+✓ Massive time savings vs manual exploration

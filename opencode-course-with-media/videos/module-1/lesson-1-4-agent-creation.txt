@@ -1,0 +1,129 @@
+# Video Content: Agent Creation Demo (60 seconds)
+
+## Simulated Video Transcript & Screen Content
+
+[00:00] NARRATOR: "Let's create a specialized code review agent"
+
+[00:05] SCREEN SHOWS:
+```
+> opencode
+🚀 OpenCode.ai ready
+> 
+```
+
+[00:08] TYPED: `/agent create security-reviewer`
+
+[00:12] SCREEN SHOWS:
+```
+🤖 Creating new specialized agent...
+
+Agent Configuration:
+┌─────────────────────────────────────┐
+│ Agent Name: security-reviewer       │
+│ Type: Custom Specialist             │
+│ Focus Area: [Enter specialization]  │
+└─────────────────────────────────────┘
+
+Enter specialization:
+```
+
+[00:15] TYPED: `Security vulnerabilities and best practices`
+
+[00:18] SCREEN SHOWS:
+```
+✓ Agent created: security-reviewer
+✓ Specialization: Security vulnerabilities and best practices
+✓ Model: Anthropic Claude (recommended for security analysis)
+✓ Tools: code analysis, vulnerability scanning, best practice validation
+
+Agent ready for use! Try: /agent security-reviewer
+```
+
+[00:22] TYPED: `/agent security-reviewer`
+
+[00:25] TYPED: `Review this authentication code for security issues:`
+
+[00:27] TYPED (code):
+```python
+def login(username, password):
+    query = f"SELECT * FROM users WHERE username='{username}' AND password='{password}'"
+    return db.execute(query)
+```
+
+[00:32] SCREEN SHOWS:
+```
+🔒 Security Review by Security-Reviewer Agent:
+
+⚠️  CRITICAL SECURITY ISSUES FOUND:
+
+1. **SQL Injection Vulnerability** (HIGH RISK)
+   - Direct string interpolation in query
+   - Attacker can inject malicious SQL
+   - Fix: Use parameterized queries
+
+2. **Plain Text Password Storage** (HIGH RISK)  
+   - Passwords stored/compared in plain text
+   - Fix: Use bcrypt or similar hashing
+
+3. **No Input Validation** (MEDIUM RISK)
+   - No sanitization of username input
+   - Fix: Validate and sanitize inputs
+
+SECURE ALTERNATIVE:
+```python
+def login(username, password):
+    # Parameterized query prevents SQL injection
+    query = "SELECT * FROM users WHERE username=? AND password_hash=?"
+    password_hash = bcrypt.checkpw(password, stored_hash)
+    return db.execute(query, (username, password_hash))
+```
+
+Risk Level: CRITICAL - Do not deploy this code
+```
+
+[00:40] NARRATOR: "Compare with general agent"
+[00:42] TYPED: `/agent general`
+[00:44] TYPED: `Review this authentication code:`
+
+[00:46] SCREEN SHOWS:
+```
+🤖 General Agent Response:
+
+This is a login function that queries a database. Here are some observations:
+
+- It takes username and password parameters
+- Uses string formatting to build SQL query  
+- Returns database query result
+- Could use better error handling
+- Consider adding logging for debugging
+
+The code works but could be improved with:
+- Input validation
+- Better error messages
+- Documentation
+- Type hints
+```
+
+[00:52] NARRATOR: "Specialized agents give focused, expert responses"
+
+[00:55] SCREEN SHOWS:
+```
+Active Agents:
+✓ security-reviewer (Security Expert)
+✓ general (General Purpose)
+
+Agent Comparison:
+Security Agent → Found 3 critical vulnerabilities + fixes
+General Agent  → Basic code review without security focus
+
+Specialized agents = Expert-level analysis
+```
+
+[01:00] END
+
+## Key Learning Points Demonstrated:
+✓ Creating custom specialized agents
+✓ Agent configuration for specific domains
+✓ Security-focused expert analysis
+✓ Comparison: specialist vs generalist responses
+✓ Professional security vulnerability detection

@@ -1,0 +1,61 @@
+# Video: Requirements Analysis - Shopify Liquid Feature (1 minute)
+
+## Scenario: Real GitHub Issue Analysis for Production Feature
+
+**[0:00-0:12] Real Issue Context**
+Developer: "I'm analyzing a real Shopify Liquid template engine issue: 'Add conditional template inheritance for mobile/desktop themes.' This affects thousands of Shopify stores."
+
+Terminal: `opencode`
+OpenCode: "Build mode active. I can analyze requirements and create implementation specs."
+
+Developer: "Analyze Shopify/liquid GitHub issue #284 and create comprehensive requirements"
+
+**[0:12-0:30] AI Requirements Analysis**
+OpenCode: *Processing real GitHub issue*
+"Analyzing issue context...
+- Current problem: Single template inheritance, no device-specific variants
+- Business impact: Poor mobile UX, slower page loads  
+- Technical constraint: Must maintain backward compatibility
+- Stakeholders: Theme developers, store owners, Shopify platform team
+
+Generating requirements analysis..."
+
+**[0:30-0:48] Professional Requirements Document**
+OpenCode: *Creates multiple files*
+"Creating requirements package:
+- functional-requirements.md (user stories, acceptance criteria)
+- technical-requirements.md (API changes, backward compatibility)
+- implementation-strategy.md (development phases, rollout plan)
+- test-scenarios.md (QA scenarios, edge cases)"
+
+Developer: "Show me the key functional requirements"
+
+OpenCode: "Core Requirements:
+1. Template conditional loading: `{% if mobile %}template-mobile{% else %}template-desktop{% endif %}`
+2. Automatic device detection with override capability  
+3. Fallback to desktop template if mobile version missing
+4. Performance: <50ms template selection overhead
+5. Developer tools: Template preview for both variants"
+
+**[0:48-0:60] Implementation Planning**
+Developer: "Generate the technical implementation approach"
+
+OpenCode: "Technical Implementation:
+- Extend Liquid parser for conditional template syntax
+- Add device detection middleware in template resolution
+- Create template inheritance hierarchy with device variants  
+- Update Shopify CLI for dual-template development
+- Add performance monitoring for template selection logic
+
+Estimated development: 3 sprints, 8 developers, backward compatible deployment."
+
+## Key Learning Points:
+1. **Real Issue Analysis**: Converting GitHub issues to professional requirements
+2. **Business Context**: Understanding stakeholder impact and technical constraints  
+3. **Comprehensive Planning**: AI generates complete requirement documentation
+4. **Implementation Strategy**: Technical approach with realistic timelines
+
+## Real Impact:
+- **Manual Requirements**: 1-2 days of business analyst + architect time  
+- **AI-Assisted Analysis**: 15 minutes with professional documentation
+- **Quality**: Complete requirements package ready for development team

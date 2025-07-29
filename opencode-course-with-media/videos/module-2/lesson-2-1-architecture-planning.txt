@@ -1,0 +1,59 @@
+# Video: Architecture Planning with Build Mode (1 minute)
+
+## Scenario: Django Oscar E-commerce Architecture Planning
+
+**[0:00-0:10] Setup Context**
+Developer: "I need to design a microservices architecture for this 180,000 line Django Oscar e-commerce platform. Let me use OpenCode.ai's Build mode for this complex planning task."
+
+Terminal: `opencode`
+OpenCode: "OpenCode.ai ready. You're in Build mode - I can create and modify files for your architecture planning."
+
+**[0:10-0:25] AI-Powered Architecture Analysis**
+Developer: "Analyze the Django Oscar codebase and design a microservices split strategy"
+
+OpenCode: *Scanning 180k lines*
+"Analyzing Oscar architecture... Found 12 major domains:
+- Customer management (oscar/apps/customer/)  
+- Product catalog (oscar/apps/catalogue/)
+- Order processing (oscar/apps/order/)
+- Payment handling (oscar/apps/payment/)
+- Inventory management (oscar/apps/partner/)
+
+Recommending 5 core microservices based on domain boundaries and data coupling analysis."
+
+**[0:25-0:45] Real Architecture Design**
+OpenCode: *Creates architecture files*
+"Creating architecture documents:
+- microservices-architecture.md (service boundaries)
+- api-contracts.yaml (service interfaces)  
+- data-migration-plan.md (database splitting strategy)
+- deployment-architecture.yaml (infrastructure design)"
+
+Developer: "Show me the service boundary recommendations"
+
+OpenCode: "Customer Service: 15k lines (user accounts, profiles, addresses)
+Catalog Service: 25k lines (products, categories, search)
+Order Service: 20k lines (cart, checkout, order processing)
+Payment Service: 8k lines (payment methods, transactions)
+Inventory Service: 12k lines (stock, warehouses, fulfillment)"
+
+**[0:45-0:60] Architecture Validation**
+OpenCode: "Architecture analysis complete. Key benefits:
+- 67% reduction in service coupling
+- Independent deployment capability
+- Clear API boundaries with OpenAPI specs
+- Database per service pattern implementation
+- Event-driven communication design"
+
+Developer: "This AI-powered architecture planning just saved me 3 days of manual analysis and gave me a production-ready microservices design."
+
+## Key Learning Points:
+1. **Build Mode for Architecture**: Can create planning documents and diagrams
+2. **Large Codebase Analysis**: AI processes 180k lines to identify service boundaries  
+3. **Domain-Driven Design**: Automatic identification of business domains
+4. **Production-Ready Output**: Complete architecture documentation with implementation plans
+
+## Real Impact: 
+- **Manual Analysis**: 2-3 days of senior architect time
+- **AI-Assisted Planning**: 30 minutes with comprehensive documentation
+- **Quality**: Professional-grade architecture with industry best practices

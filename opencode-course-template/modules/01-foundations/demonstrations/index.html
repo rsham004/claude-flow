@@ -6,6 +6,8 @@
     <title>Module 1: Foundations - Interactive Demonstrations</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/enhanced-demo-styles.css">
+    <link rel="stylesheet" href="styles/accessibility-enhancements.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,6 +23,9 @@
                 </div>
                 <nav class="main-nav">
                     <button class="nav-btn active" data-demo="variables">Variables & Types</button>
+                    <button class="nav-btn enhanced" data-demo="enhanced-variables" title="Enhanced with advanced visualizations">
+                        ✨ Variables Enhanced
+                    </button>
                     <button class="nav-btn" data-demo="functions">Functions & Control</button>
                     <button class="nav-btn" data-demo="algorithms">Algorithms</button>
                     <button class="nav-btn" data-demo="html-css">HTML/CSS</button>
@@ -151,7 +156,9 @@ console.log("Hello, OpenCode! 🚀");
     <script src="js/core/demo-loader.js"></script>
     <script src="js/core/console-engine.js"></script>
     <script src="js/core/progress-tracker.js"></script>
+    <script src="js/core/enhanced-demo-engine.js"></script>
     <script src="js/demonstrations/variables-demo.js"></script>
+    <script src="js/demonstrations/enhanced-variables-demo.js"></script>
     <script src="js/demonstrations/functions-demo.js"></script>
     <script src="js/demonstrations/algorithms-demo.js"></script>
     <script src="js/demonstrations/html-css-demo.js"></script>

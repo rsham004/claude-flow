@@ -508,6 +508,7 @@ class OpenCodeApp {
     getDemoTitle(demoType) {
         const titles = {
             variables: 'Variables & Data Types',
+            'enhanced-variables': 'Variables & Data Types - Enhanced Experience',
             functions: 'Functions & Control Flow',
             algorithms: 'Basic Algorithms',
             'html-css': 'HTML/CSS Fundamentals',

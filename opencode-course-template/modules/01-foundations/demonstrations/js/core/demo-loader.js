@@ -20,6 +20,7 @@ class DemoLoader {
     initializeDemonstrations() {
         // Register all available demonstrations
         this.demonstrations.set('variables', VariablesDemo);
+        this.demonstrations.set('enhanced-variables', EnhancedVariablesDemo);
         this.demonstrations.set('functions', FunctionsDemo);
         this.demonstrations.set('algorithms', AlgorithmsDemo);
         this.demonstrations.set('html-css', HtmlCssDemo);

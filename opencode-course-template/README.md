@@ -1,189 +1,147 @@
-# OpenCode Software Development Course Template
+# OpenCode.ai Mastery Course
 
-🎓 **A comprehensive, modular template for teaching software development using OpenCode principles**
+🤖 **Master AI-Assisted Development with OpenCode.ai**
 
 ## 📋 Course Overview
 
-This template provides a complete framework for creating software development courses from beginner to expert level. Built with OpenCode best practices, it emphasizes hands-on learning, collaborative development, and real-world application.
+This comprehensive course teaches **experienced programmers** how to effectively use OpenCode.ai - the advanced terminal-based AI coding assistant - to enhance their development workflows and dramatically increase productivity.
 
-### 🎯 Learning Path
+### 🎯 Who This Course Is For
 
-```
-Beginner (4-6 weeks) → Intermediate (6-8 weeks) → Advanced (8-10 weeks) → Expert (10-12 weeks)
-```
+**Prerequisites Required:**
+- 2+ years of programming experience
+- Proficiency in at least one programming language
+- Comfortable with terminal/command line
+- Understanding of modern development practices
 
-## 🏗️ Course Structure
+**Not suitable for:**
+- Programming beginners
+- Developers seeking basic coding tutorials
+- Those looking for general software development principles
 
-### 📚 **Module 1: Foundations (Beginner)**
-- **Duration**: 4-6 weeks
-- **Prerequisites**: None (complete beginner friendly)
-- **Topics**: Variables, functions, control flow, Git basics, HTML/CSS fundamentals
-- **Outcome**: Basic programming literacy and web development basics
+## 🚀 What You'll Learn
 
-### ⚙️ **Module 2: Intermediate Development**
-- **Duration**: 6-8 weeks  
-- **Prerequisites**: Module 1 completion
-- **Topics**: Object-oriented programming, data structures, databases, APIs, JavaScript frameworks
-- **Outcome**: Full-stack development capabilities
+### Core Competencies
+- **OpenCode.ai Mastery**: Installation, configuration, and advanced usage
+- **AI-Assisted Development**: Effective prompting and workflow integration
+- **Multi-LLM Management**: Working with multiple AI providers optimally
+- **Team Collaboration**: Sharing knowledge and establishing AI-assisted standards
+- **Production Integration**: Using OpenCode.ai in real-world development
 
-### 🏛️ **Module 3: Advanced Engineering**
-- **Duration**: 8-10 weeks
-- **Prerequisites**: Module 2 completion
-- **Topics**: Design patterns, system architecture, testing strategies, security, performance optimization
-- **Outcome**: Senior developer competencies
+### Key Skills Developed
+- 40%+ improvement in development velocity
+- Advanced prompting techniques for complex tasks
+- Effective code exploration and refactoring with AI
+- Team leadership in AI-assisted development
+- Cross-language and framework adaptability
 
-### 🚀 **Module 4: Expert Leadership**
-- **Duration**: 10-12 weeks
-- **Prerequisites**: Module 3 completion
-- **Topics**: System design, DevOps, team leadership, emerging technologies, contributing to open source
-- **Outcome**: Technical leadership and architectural skills
+## 📚 Course Structure
 
-## 🛠️ Quick Start
+| Module | Duration | Focus | Hours |
+|--------|----------|-------|-------|
+| **Module 1: Fundamentals** | 2 weeks | Setup, basics, configuration | 20h |
+| **Module 2: Advanced Development** | 3 weeks | Complex tasks, workflows | 30h |
+| **Module 3: Team & Production** | 2 weeks | Collaboration, CI/CD | 20h |
+| **Module 4: Mastery** | 2 weeks | Optimization, mentoring | 20h |
+| **Total** | **9 weeks** | **Complete mastery** | **90h** |
 
-### Prerequisites
-- Computer with internet connection
-- Text editor or IDE (VS Code recommended)
-- Modern web browser
+## 🛠️ Technical Requirements
 
-### Installation
-```bash
-# Clone or download this template
-git clone [your-repo-url] my-course
-cd my-course
+### Required
+- **OpenCode.ai** (latest version)
+- **Modern terminal** (WezTerm, Alacritty, Ghostty, or Kitty)
+- **API access** to at least one AI provider (OpenAI, Anthropic, Google AI)
+- **Git** for version control
+- **8GB+ RAM** and stable internet connection
 
-# Install dependencies
-npm install
-pip install -r requirements.txt
+### Recommended
+- Multiple AI provider accounts for comparison
+- 16GB+ RAM for optimal performance
+- macOS or Linux (Windows with WSL)
 
-# Verify setup
-npm run verify-setup
-```
+## 📖 Course Materials
 
-### Course Management
-```bash
-# Start development server
-npm start
+### Module 1: OpenCode.ai Fundamentals
+- Installation and multi-provider setup
+- Terminal UI navigation and customization
+- Project initialization and analysis
+- Question mode for code exploration
+- Configuration and personalization
 
-# Run tests
-npm test
+### Module 2: Advanced AI-Assisted Development  
+- Plan mode for architecture and design
+- Build mode for direct implementation
+- Advanced prompting strategies
+- Large codebase management
+- Workflow integration patterns
 
-# Format code
-npm run format
+### Module 3: Team Collaboration & Production
+- Session sharing and team collaboration
+- Establishing AI-assisted development standards
+- CI/CD integration strategies
+- Security considerations for sensitive code
+- Knowledge sharing and documentation
 
-# Build documentation
-npm run build
-```
+### Module 4: Mastery & Optimization
+- Performance tuning and optimization
+- Custom workflow development
+- Advanced troubleshooting techniques
+- Cross-language proficiency
+- Teaching and mentoring others
 
-## 📖 Module Templates
+## 🎓 Assessment & Certification
 
-Each module follows a consistent structure:
+### Assessment Methods
+- **Practical Projects** (70%): Real-world applications and refactoring
+- **Workflow Demonstrations** (20%): Recorded development sessions  
+- **Knowledge Applications** (10%): Configuration and troubleshooting
 
-```
-modules/XX-module-name/
-├── README.md           # Module overview and objectives
-├── lessons/            # Individual lesson plans
-├── exercises/          # Practice problems and solutions
-├── projects/           # Hands-on coding projects
-├── assessments/        # Quizzes and evaluations
-└── resources/          # Supplementary materials
-```
+### Certification Levels
+- **Certified OpenCode.ai User**: Module 1-2 completion
+- **Advanced AI-Assisted Developer**: Module 1-3 completion
+- **OpenCode.ai Expert**: All modules with distinction
 
-## 🎯 Learning Methodology
+## 🎯 Learning Outcomes
 
-### SPARC Framework
-- **Specification**: Clear requirements and objectives
-- **Pseudocode**: Algorithm design and planning
-- **Architecture**: System structure and design patterns
-- **Refinement**: Iterative improvement and optimization
-- **Completion**: Final implementation and testing
+Upon completion, you will:
 
-### Interactive Learning
-- 🤝 **Collaborative**: Pair programming and code reviews
-- 🛠️ **Hands-on**: Build real applications from scratch
-- 🎮 **Gamified**: Achievement system and progress tracking
-- 🔄 **Iterative**: Continuous feedback and improvement
+✅ **Master OpenCode.ai** for professional development workflows  
+✅ **Increase productivity** by 30-50% on typical development tasks  
+✅ **Lead AI-assisted development** initiatives within your team  
+✅ **Integrate AI assistance** effectively into production environments  
+✅ **Mentor others** in advanced AI-assisted development techniques  
 
-## 📊 Assessment Framework
+## 🚦 Getting Started
 
-### Evaluation Methods
-- **Quizzes** (20%): Knowledge retention and concept understanding
-- **Coding Exercises** (30%): Practical skill application
-- **Projects** (40%): Real-world problem solving
-- **Participation** (10%): Collaboration and communication
+### Prerequisites Check
+- [ ] 2+ years programming experience
+- [ ] Comfortable with terminal/command line
+- [ ] Access to modern development environment
+- [ ] API access to at least one AI provider
 
-### Success Criteria
-- **Beginner**: Can create simple web applications
-- **Intermediate**: Can build full-stack applications with APIs
-- **Advanced**: Can architect scalable systems with best practices
-- **Expert**: Can lead technical teams and design complex systems
+### Quick Start
+1. **Install OpenCode.ai**: `curl -fsSL https://opencode.ai/install | bash`
+2. **Verify installation**: `opencode --version`
+3. **Set up authentication**: `opencode auth login`
+4. **Begin Module 1**: Follow the lesson plans in `/modules/01-fundamentals/`
 
-## 🎨 Customization Guide
+## 📞 Support & Community
 
-### Adding New Modules
-1. Create module directory: `modules/XX-new-module/`
-2. Copy template structure from `templates/module-template/`
-3. Update course navigation and prerequisites
-4. Add module to main README and course overview
+- **Course Support**: GitHub Issues and Discussions
+- **OpenCode.ai Documentation**: [opencode.ai/docs](https://opencode.ai/docs)
+- **Community**: Join other learners and share experiences
+- **Updates**: Course materials updated regularly with new features
 
-### Language Support
-- **Primary**: JavaScript (Node.js) and Python
-- **Secondary**: HTML/CSS, SQL, Shell scripting
-- **Extensible**: Framework supports Java, C#, Go, Rust, etc.
+## 🔄 Course Updates
 
-### Content Creation
-- Use `templates/lesson-template.md` for individual lessons
-- Follow `templates/exercise-template.md` for practice problems
-- Reference `templates/project-template.md` for hands-on projects
-
-## 🔧 Technical Features
-
-### Development Tools
-- **Linting**: ESLint for JavaScript, Flake8/Black for Python
-- **Testing**: Jest/Mocha for JS, pytest for Python
-- **Build**: Webpack/Vite for frontend, setuptools for Python
-- **Documentation**: JSDoc, Sphinx, Markdown
-
-### Code Quality
-- Automated formatting and style checking
-- Pre-commit hooks for code quality
-- Comprehensive test coverage requirements
-- Code review guidelines and checklists
-
-## 📚 Educational Resources
-
-### Included Materials
-- 📖 **Comprehensive documentation** for all topics
-- 💻 **Working code examples** with explanations
-- 🎯 **Progressive exercises** with difficulty scaling
-- 🏆 **Portfolio projects** for career preparation
-
-### External Resources
-- Industry documentation and best practices
-- Open source project contribution guides
-- Career development and interview preparation
-- Community forums and mentorship programs
-
-## 🤝 Contributing
-
-This course template is designed to be collaborative and continuously improved:
-
-1. **Fork** the repository
-2. **Create** feature branches for new content
-3. **Follow** the established templates and quality standards
-4. **Test** all code examples and exercises
-5. **Submit** pull requests with clear descriptions
-
-## 📄 License
-
-This course template is released under the [MIT License](LICENSE), making it free to use, modify, and distribute for educational purposes.
-
-## 🆘 Support
-
-- **Documentation**: See individual module READMEs
-- **Issues**: Report problems or suggestions via GitHub issues
-- **Community**: Join our Discord server for instructor support
-- **Email**: [course-support@yourorganization.com]
+This course evolves with OpenCode.ai:
+- New feature coverage as they're released
+- Updated best practices based on community feedback
+- Integration with emerging AI/LLM providers
+- Real-world case studies and examples
 
 ---
 
-**Built with ❤️ using OpenCode principles for accessible, collaborative software education**
+**Transform your development workflow with AI assistance. Master OpenCode.ai and unlock your full programming potential.**
+
+🚀 **Ready to get started?** Begin with [Module 1: OpenCode.ai Fundamentals](./modules/01-fundamentals/README.md)

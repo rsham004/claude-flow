@@ -41,18 +41,57 @@ By completing Module 1, students will:
 - **Lesson 2.4**: Advanced Prompting Techniques (Kubernetes operator development)
 - **Exercise 2.2**: Legacy System Modernization (5 hours)
 
-#### **Week 5: Integration & Optimization**
+#### **Week 5: Advanced Agent Orchestration**
 - **Lesson 2.5**: Large Codebase Management (Linux kernel networking, 500k+ lines)
-- **Exercise 2.3**: Production Feature Development (6 hours)
+- **Lesson 2.6**: Advanced Agent Orchestration (multi-agent workflows, intelligent routing)
+- **Exercise 2.3**: Production Feature Development with Agent Coordination (6 hours)
 - **Assessment**: Advanced Development Mastery (4 hours)
 
 ### **Module 2 Learning Outcomes**
 By completing Module 2, students will:
 - ✅ Design complex system architectures using Plan mode
-- ✅ Implement sophisticated features with Build mode
+- ✅ Implement sophisticated features with Build mode and agent coordination
 - ✅ Navigate and modify enterprise-scale codebases (10,000+ lines)
-- ✅ Apply advanced prompting techniques for complex development
+- ✅ Apply advanced prompting techniques and multi-agent orchestration
 - ✅ Contribute professionally to real open-source projects
+
+### **Module 3: Team Collaboration & Production Workflows** (2 weeks, 20 hours)
+
+#### **Week 6: Shared Agent Systems**
+- **Lesson 3.1**: Team Agent Configuration & Sharing (shared repositories, team standards)
+- **Lesson 3.2**: Multi-Developer Agent Coordination (resource sharing, handoff protocols)
+- **Exercise 3.1**: Team Agent Implementation (5 hours)
+
+#### **Week 7: Production Integration**  
+- **Lesson 3.3**: CI/CD Integration with Agent Workflows (automated pipelines, deployment validation)
+- **Lesson 3.4**: Security & Compliance for AI-Assisted Development (governance, audit trails)
+- **Exercise 3.2**: Production Deployment Project (6 hours)
+
+### **Module 3 Learning Outcomes**
+By completing Module 3, students will:
+- ✅ Coordinate agents across development teams with shared workflows
+- ✅ Integrate AI-assisted development into production CI/CD pipelines
+- ✅ Implement enterprise-grade security and compliance for AI development
+- ✅ Lead team adoption of AI-assisted development practices
+
+### **Module 4: Mastery & Optimization** (2 weeks, 20 hours)
+
+#### **Week 8: Advanced Agent Development**
+- **Lesson 4.1**: Custom Agent Development & Fine-Tuning (proprietary agents, domain specialization)
+- **Lesson 4.2**: Enterprise Agent Performance Optimization (cost optimization, monitoring)
+- **Exercise 4.1**: Custom Agent Ecosystem Development (5 hours)
+
+#### **Week 9: Organizational Strategy**
+- **Lesson 4.3**: Enterprise AI Development Strategy & Governance (transformation, compliance)
+- **Lesson 4.4**: Advanced Troubleshooting & Cross-Language Mastery (expert problem-solving)
+- **Exercise 4.2**: Organizational AI Transformation Project (8 hours)
+
+### **Module 4 Learning Outcomes**
+By completing Module 4, students will:
+- ✅ Build custom agents that provide competitive advantage
+- ✅ Optimize agent systems for enterprise scale and cost efficiency
+- ✅ Lead enterprise-wide AI development transformation initiatives
+- ✅ Master cross-language AI-assisted development and advanced problem-solving
 
 ## 🛠️ What Makes This Course Premium
 
@@ -61,10 +100,11 @@ By completing Module 2, students will:
 - Students build deployable applications, not toy projects
 - All exercises produce working code with tests and documentation
 
-### **Specific Prompts That Work**
-- 50+ tested prompts with expected outputs
-- Step-by-step workflows experienced developers actually use
-- Provider-specific strategies (OpenAI for generation, Anthropic for analysis)
+### **Complete Agent-Powered Workflows**
+- 100+ tested prompts across specialized agents with expected outputs
+- Advanced multi-agent orchestration patterns for complex development
+- Intelligent agent selection and routing for maximum efficiency
+- Custom agent development for competitive advantage
 
 ### **Professional Context**
 - Enterprise security practices for API key management

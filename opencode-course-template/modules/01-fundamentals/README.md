@@ -24,19 +24,26 @@ This module follows a hands-on, practical approach where you immediately start w
 - Test connections and set up provider switching
 - **Outcome**: Multi-provider setup with cost monitoring
 
+#### Lesson 1.3: Real Codebase Analysis Techniques (3 hours)
+- Analyze FastAPI (25,000+ lines) using specific prompts
+- Learn navigation and understanding workflows
+- Practice provider selection for different analysis tasks
+- **Outcome**: Master codebase exploration with AI assistance
+
 #### Exercise 1.3: Enterprise Codebase Analysis (4 hours)
 - Use multiple providers to analyze real production codebases
 - Practice security-conscious AI usage with sensitive code
 - Create professional documentation and recommendations
 - **Outcome**: Complete analysis of 1000+ line real codebase
 
-### **Week 2: Real-World Application**
+### **Week 2: Agent-Powered Development**
 
-#### Lesson 1.3: Real Codebase Analysis Techniques (3 hours)
-- Analyze FastAPI (25,000+ lines) using specific prompts
-- Learn navigation and understanding workflows
-- Practice provider selection for different analysis tasks
-- **Outcome**: Master codebase exploration with AI assistance
+#### Lesson 1.4: Agent Creation & Management (3 hours)
+- Create specialized agents for different development tasks
+- Configure agent-specific models, prompts, and tool access
+- Build coordinated agent workflows for complex projects
+- Set up project-specific agent teams with AGENTS.md
+- **Outcome**: Complete AI development team with specialized agents
 
 #### Exercise 1.4: Build Complete REST API (4 hours)
 - Build full-featured Task Management API using AI

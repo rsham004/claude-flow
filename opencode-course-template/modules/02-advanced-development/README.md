@@ -93,17 +93,23 @@ You should now have:
 - Apply AI-assisted code review and optimization to complex systems
 - **Outcome**: Successfully implement features in enterprise-scale production codebases
 
+#### Lesson 2.6: Advanced Agent Orchestration (3 hours)
+- Orchestrate complex multi-agent workflows for enterprise development
+- Implement intelligent agent selection and routing systems
+- Build self-organizing agent teams that adapt to project requirements
+- **Outcome**: Master sophisticated multi-agent coordination for complex projects
+
 #### Exercise 2.3: Production Feature Development (6 hours)
 - Add complete feature to real open-source project (Fastify, Pandas, or Vue.js)
-- Use full Plan → Build → Test → Document → Contribute cycle
+- Use full Plan → Build → Test → Document → Contribute cycle with agent coordination
 - Submit actual pull request to active open-source project
 - **Outcome**: Real contribution to production codebase with community validation
 
 #### Assessment: Advanced Development Mastery (4 hours)
 - **Part A**: Rapid architecture analysis with real enterprise systems
-- **Part B**: Complex multi-subsystem feature implementation challenge
+- **Part B**: Complex multi-subsystem feature implementation with agent orchestration
 - **Part C**: Large codebase navigation and emergency bug resolution
-- **Part D**: Professional technical documentation and specifications
+- **Part D**: Professional technical documentation and multi-agent workflow design
 - **Outcome**: Validated mastery of advanced AI-assisted development (see `assessment-module-2-mastery.md`)
 
 ## 📊 Success Criteria (Per Course Requirements)

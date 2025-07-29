@@ -30,26 +30,26 @@ This module follows a hands-on, practical approach where you immediately start w
 - Practice provider selection for different analysis tasks
 - **Outcome**: Master codebase exploration with AI assistance
 
-#### Exercise 1.3: Enterprise Codebase Analysis (4 hours)
-- Use multiple providers to analyze real production codebases
-- Practice security-conscious AI usage with sensitive code
-- Create professional documentation and recommendations
-- **Outcome**: Complete analysis of 1000+ line real codebase
-
-### **Week 2: Agent-Powered Development**
-
-#### Lesson 1.4: Agent Creation & Management (3 hours)
+#### Lesson 1.4: Agent Creation & Management (4 hours)
 - Create specialized agents for different development tasks
 - Configure agent-specific models, prompts, and tool access
 - Build coordinated agent workflows for complex projects
 - Set up project-specific agent teams with AGENTS.md
 - **Outcome**: Complete AI development team with specialized agents
 
-#### Exercise 1.4: Build Complete REST API (4 hours)
-- Build full-featured Task Management API using AI
-- Practice code generation with authentication, CRUD, tests
+### **Week 2: Practical Application & Mastery**
+
+#### Exercise 1.1: Enterprise Codebase Analysis (4 hours)
+- Use multiple providers to analyze real production codebases
+- Practice security-conscious AI usage with sensitive code
+- Create professional documentation and recommendations
+- **Outcome**: Complete analysis of 1000+ line real codebase
+
+#### Exercise 1.2: Build Complete REST API with Agents (5 hours)
+- Build full-featured Task Management API using coordinated agents
+- Practice agent-powered code generation with authentication, CRUD, tests
 - Deploy working application with proper error handling
-- **Outcome**: Complete, deployable REST API built with AI
+- **Outcome**: Complete, deployable REST API built with multi-agent workflows
 
 #### Assessment: Professional Competency Validation (3 hours)
 - Demonstrate multi-provider setup and usage

@@ -31,12 +31,12 @@ By completing Module 1, students will:
 
 ### **Module 2: Advanced AI-Assisted Development** (3 weeks, 30 hours)
 
-#### **Week 3: Plan Mode Mastery**
+#### **Week 3: Architecture & Planning with Build Mode**
 - **Lesson 2.1**: Architecture Planning with AI (Django Oscar microservices, 180k+ lines)
 - **Lesson 2.2**: Feature Planning & Requirements Analysis (Shopify Liquid real issues)
 - **Exercise 2.1**: Microservices Architecture Planning (5 hours)
 
-#### **Week 4: Build Mode Implementation**
+#### **Week 4: Advanced Implementation**
 - **Lesson 2.3**: Direct Code Implementation (Ghost CMS modernization, 200k+ lines)
 - **Lesson 2.4**: Advanced Prompting Techniques (Kubernetes operator development)
 - **Exercise 2.2**: Legacy System Modernization (5 hours)
@@ -49,11 +49,17 @@ By completing Module 1, students will:
 
 ### **Module 2 Learning Outcomes**
 By completing Module 2, students will:
-- ✅ Design complex system architectures using Plan mode
-- ✅ Implement sophisticated features with Build mode and agent coordination
+- ✅ Design complex system architectures using Build mode for file creation and editing
+- ✅ Implement sophisticated features with advanced agent coordination
 - ✅ Navigate and modify enterprise-scale codebases (10,000+ lines)
 - ✅ Apply advanced prompting techniques and multi-agent orchestration
 - ✅ Contribute professionally to real open-source projects
+
+### **🚨 Important: Build Mode for Advanced Developers**
+This course teaches **Build mode exclusively** because:
+- **Build mode allows file editing and creation** - essential for real development work
+- **Plan mode is read-only** - useful for analysis but not for actual coding
+- **Advanced developers need to modify and create files** - Build mode provides full functionality
 
 ### **Module 3: Team Collaboration & Production Workflows** (2 weeks, 20 hours)
 

@@ -90,7 +90,7 @@ This will be my reference context for all subsequent modernization work.
 
 #### Task 1.2: Identify Modernization Priorities
 ```
-/mode plan
+# Using Build mode to create implementation and documentation files
 
 Based on the legacy assessment, prioritize modernization tasks:
 
@@ -272,7 +272,7 @@ Show specific performance improvements achieved through modernization.
 
 #### Task 4.1: Deployment Strategy
 ```
-/mode plan
+# Using Build mode to create implementation and documentation files
 
 Create a production deployment strategy for the modernized application:
 

@@ -147,7 +147,7 @@ Continuing from the congestion control navigation above:
 
 #### Prompt 5: Cross-Subsystem Feature Planning
 ```
-/mode plan
+# Using Build mode (allows file modifications for large codebases)
 
 Plan implementation of a comprehensive network monitoring feature that spans multiple kernel subsystems:
 

@@ -52,7 +52,7 @@ This course is designed to teach **experienced programmers** how to effectively 
 **Objective**: Leverage OpenCode.ai for complex development tasks
 
 #### Learning Outcomes:
-- Master Plan mode for feature design and architecture
+- Master Build mode for feature design and architecture (with file creation)
 - Use Build mode for direct code implementation
 - Develop effective prompting strategies for different scenarios
 - Handle large codebases and complex refactoring tasks
@@ -141,7 +141,7 @@ This course is designed to teach **experienced programmers** how to effectively 
 - Environment customization
 
 ### Module 2: Advanced Development (3 weeks, 30 hours)
-- Plan mode for architecture and design
+- Build mode for architecture and design (enables file creation)
 - Build mode for implementation
 - Advanced prompting techniques
 - Large codebase management

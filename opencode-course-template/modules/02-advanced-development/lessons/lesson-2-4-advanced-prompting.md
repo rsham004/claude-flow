@@ -166,7 +166,7 @@ I'm debugging a complex issue in my PostgreSQL Operator. The StatefulSet is crea
 Help me solve this using multi-modal analysis:
 
 **Mode 1 - Code Analysis**:
-/mode plan
+# Using Build mode (enables all tools including file editing)
 Analyze the controller code for StatefulSet creation logic. What could cause pods to remain in Pending state?
 
 [After getting analysis, continue with:]

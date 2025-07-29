@@ -79,7 +79,7 @@ opencode
 Use Plan mode to thoroughly analyze your chosen feature:
 
 ```
-/mode plan
+# Using Build mode to create specifications and implementation files
 
 I want to implement [specific feature] for [project name]. Help me analyze the complete requirements:
 
@@ -108,7 +108,7 @@ Base this analysis on the actual GitHub issue discussion and project codebase ar
 
 #### Task 1.2: Architecture Integration Planning
 ```
-/mode plan
+# Using Build mode to create specifications and implementation files
 
 Based on the [project] codebase architecture, plan how this feature will integrate:
 

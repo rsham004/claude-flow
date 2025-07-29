@@ -3,16 +3,24 @@
 ## 🎯 What You'll Actually Do
 
 By the end of this lesson, you will:
-- Transform business requirements into technical specifications using Plan mode
-- Break down complex features into implementable tasks with AI assistance
+- Transform business requirements into technical specifications using Build mode with file creation
+- Break down complex features and generate implementation templates with AI assistance
 - Practice requirements analysis on real open-source project feature requests
-- Create professional technical specifications that development teams can execute
+- Create professional technical specifications and documentation files that development teams can execute
+
+## 🚨 **Build Mode for Feature Planning**
+
+**Use Build mode for feature planning** because:
+- ✅ **Creates specification documents** - generates actual deliverable files
+- ✅ **Produces code templates** - provides implementation starting points
+- ✅ **Generates documentation** - creates team-shareable specifications
+- ❌ **Plan mode only provides suggestions** - cannot create the files teams need
 
 ## 🔄 Skills Bridge from Lesson 2.1
 
-**Previous**: You planned complete system architectures for Django Oscar microservices migration.
-**Now**: You'll focus on individual feature planning within those architectures.
-**Next**: Lesson 2.3 will implement the features you plan here using Build mode.
+**Previous**: You planned complete system architectures with generated documentation files.
+**Now**: You'll focus on individual feature planning with specification and template creation.
+**Next**: Lesson 2.3 will implement the features using the specifications and templates you create.
 
 ## 🎯 Real Project: GitHub Feature Request Analysis
 
@@ -69,7 +77,8 @@ For each issue, identify:
 
 #### Prompt 2: Prioritize and Scope Features
 ```
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 
 Based on the Liquid template engine codebase analysis, help me prioritize these feature requests for implementation:
 
@@ -94,7 +103,8 @@ Create a development roadmap for the next 6 months.
 
 #### Prompt 3: Technical Specification Creation
 ```
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 
 Focus on the "nested loops with different iteration variables" feature for Shopify Liquid. Create a complete technical specification:
 
@@ -129,7 +139,8 @@ Base this on actual Liquid template engine architecture.
 
 #### Prompt 4: Requirements Gathering
 ```
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 
 I need to add comprehensive GraphQL support to an Express.js application. The requirements are:
 
@@ -155,7 +166,8 @@ Create a detailed feature specification that includes:
 
 #### Prompt 5: Break Down Implementation Tasks
 ```
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 
 Break down the Express.js GraphQL integration into specific, implementable tasks. For each task provide:
 
@@ -183,7 +195,8 @@ Make this detailed enough for a development team to execute.
 
 #### Prompt 6: Legacy Integration Planning
 ```
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 
 Analyze this real legacy system scenario:
 
@@ -209,7 +222,8 @@ Reference real WordPress plugin architecture patterns.
 
 #### Prompt 7: Risk Assessment and Mitigation
 ```
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 
 For the WordPress React dashboard integration, identify and plan mitigation for these risks:
 
@@ -243,7 +257,8 @@ Create a risk register suitable for project stakeholders.
 
 #### Prompt 8: Choose and Analyze Real Issue
 ```
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 
 Help me select and plan a feature contribution to an active open-source project:
 
@@ -289,12 +304,14 @@ Make this specification detailed enough to actually implement.
 ```
 # Test with OpenAI
 /provider openai
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 What are the main technical challenges of adding real-time collaboration features to a text editor, and how would you prioritize solving them?
 
 # Test with Anthropic  
 /provider anthropic
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 What are the main technical challenges of adding real-time collaboration features to a text editor, and how would you prioritize solving them?
 
 # Compare responses:
@@ -309,7 +326,8 @@ What are the main technical challenges of adding real-time collaboration feature
 
 #### Prompt 10: Multi-System Feature Planning
 ```
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 
 Plan a complex feature that spans multiple systems:
 
@@ -337,7 +355,8 @@ Create specifications that multiple development teams could execute independentl
 
 #### Prompt 11: Iterative Planning with Context Preservation
 ```
-/mode plan
+# Use Build mode (default - enables file creation)
+# This allows creating documentation and code templates
 
 I'm planning a major feature upgrade that will require multiple planning sessions. Help me maintain context across these sessions:
 

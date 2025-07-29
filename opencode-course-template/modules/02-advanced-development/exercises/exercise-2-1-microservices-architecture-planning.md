@@ -57,7 +57,7 @@ opencode
 Use Plan mode to analyze your chosen application:
 
 ```
-/mode plan
+# Using Build mode to create documentation and architecture files
 
 Analyze [your chosen application] to understand its current monolithic architecture:
 
@@ -74,7 +74,7 @@ Focus on understanding the business logic and data flow patterns.
 
 #### Task 1.2: Identify Microservice Candidates
 ```
-/mode plan
+# Using Build mode to create documentation and architecture files
 
 Based on the architecture analysis, identify potential microservices using Domain-Driven Design principles:
 
@@ -94,7 +94,7 @@ Recommend 5-8 microservices maximum for realistic migration.
 
 #### Task 2.1: Service Extraction Strategy
 ```
-/mode plan
+# Using Build mode to create documentation and architecture files
 
 Create a detailed migration strategy for extracting microservices from [your application]:
 
@@ -111,7 +111,7 @@ Consider the "Strangler Fig" pattern for gradual migration.
 
 #### Task 2.2: Technical Implementation Planning
 ```
-/mode plan
+# Using Build mode to create documentation and architecture files
 
 Design the technical implementation approach for the microservices migration:
 
@@ -130,7 +130,7 @@ Base recommendations on the specific technology stack of your chosen application
 
 #### Task 3.1: Risk Analysis
 ```
-/mode plan
+# Using Build mode to create documentation and architecture files
 
 Conduct comprehensive risk assessment for the microservices migration:
 
@@ -185,7 +185,7 @@ Create ADRs for:
 
 #### Task 4.2: Executive Summary
 ```
-/mode plan
+# Using Build mode to create documentation and architecture files
 
 Create an executive summary for leadership that includes:
 

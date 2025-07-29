@@ -262,7 +262,7 @@ Start with the database schema and model changes.
 ```
 I need to add OAuth2 authentication to Ghost CMS. Help me decide the approach.
 
-/mode plan
+# Using Build mode (default - allows file editing)
 First, analyze the current authentication system and plan the OAuth2 integration strategy.
 
 [After getting the plan]

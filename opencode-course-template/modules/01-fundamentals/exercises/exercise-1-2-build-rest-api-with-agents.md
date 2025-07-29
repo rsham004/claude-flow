@@ -1,16 +1,16 @@
-# Exercise 1.4: Build a Complete REST API with OpenCode.ai
+# Exercise 1.2: Build a Complete REST API with Agent Coordination
 
 ## 🎯 What You'll Build
 
-In 2 hours, you'll use OpenCode.ai to build a complete REST API for a **Task Management System** with:
-- CRUD operations for tasks
-- User authentication  
-- Database integration
-- Input validation
-- Error handling
-- Tests
+In 5 hours, you'll use OpenCode.ai with coordinated agents to build a complete REST API for a **Task Management System** with:
+- CRUD operations for tasks using specialized agents
+- User authentication with security-focused agents
+- Database integration with database-expert agents
+- Comprehensive testing with test-automation agents
+- Professional documentation with documentation agents
+- Code review with quality-assurance agents
 
-**No fluff. Just real code and real prompts.**
+**Real multi-agent workflows. Professional results.**
 
 ## 🚀 Step-by-Step Build Process
 

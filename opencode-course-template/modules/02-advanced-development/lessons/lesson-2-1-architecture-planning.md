@@ -1,12 +1,22 @@
-# Lesson 2.1: Architecture Planning with Plan Mode
+# Lesson 2.1: Architecture Planning with Build Mode
 
 ## 🎯 What You'll Actually Do
 
 By the end of this lesson, you will:
-- Use Plan mode to design a complete microservices architecture  
-- Plan the migration of a real monolithic application
-- Practice advanced prompting for architectural decisions
-- Create professional technical specifications using AI assistance
+- Use Build mode to design and document a complete microservices architecture  
+- Plan the migration of a real monolithic application with generated documentation
+- Practice advanced prompting for architectural decisions with file creation
+- Create professional technical specifications and diagrams using AI assistance
+
+## 🚨 **Critical: Why Build Mode for Architecture Planning**
+
+**Always use Build mode for architecture work** because:
+- ✅ **Can create documentation files** - essential for architecture planning
+- ✅ **Can generate diagrams and specs** - produces actual deliverables
+- ✅ **Can create code templates** - provides implementation guidance
+- ❌ **Plan mode cannot create files** - only provides suggestions without output
+
+**Professional Reality**: Architecture planning requires creating documents, diagrams, and templates that your team can use.
 
 ## 🔄 Quick Module 1 Skills Validation (5 minutes)
 
@@ -90,7 +100,8 @@ Provide a specific breakdown with code references.
 
 #### Prompt 3: Switch to Plan Mode
 ```
-/mode plan
+# Use Build mode (default - no mode switching needed)
+# Build mode allows file creation for documentation
 
 I want to design a microservices architecture for Django Oscar. Help me plan the migration from this monolith to microservices.
 
@@ -112,7 +123,8 @@ Base this on the actual Django Oscar codebase we just analyzed.
 
 #### Prompt 4: Detailed Service Design
 ```
-/mode plan
+# Use Build mode (default - no mode switching needed)
+# Build mode allows file creation for documentation
 
 Focus on the "Order Management" microservice from Django Oscar. Plan the complete service architecture:
 
@@ -134,7 +146,8 @@ Reference specific Django Oscar code where relevant.
 
 #### Prompt 5: API Design Planning
 ```
-/mode plan
+# Use Build mode (default - no mode switching needed)
+# Build mode allows file creation for documentation
 
 Design the API contracts between Django Oscar microservices. Create specifications for:
 
@@ -154,7 +167,8 @@ Base this on real Django Oscar business logic.
 
 #### Prompt 6: Data Migration Strategy
 ```
-/mode plan
+# Use Build mode (default - no mode switching needed)
+# Build mode allows file creation for documentation
 
 Plan the data migration strategy for extracting Django Oscar's order management into a separate microservice:
 
@@ -171,7 +185,8 @@ Reference actual Django Oscar models and their relationships.
 
 #### Prompt 7: Deployment Architecture
 ```
-/mode plan
+# Use Build mode (default - no mode switching needed)
+# Build mode allows file creation for documentation
 
 Design the deployment architecture for Django Oscar microservices:
 
@@ -194,7 +209,8 @@ Consider Django Oscar's current deployment patterns and constraints.
 
 #### Prompt 8: Generate Architecture Document
 ```
-/mode plan
+# Use Build mode (default - no mode switching needed)
+# Build mode allows file creation for documentation
 
 Create a comprehensive technical architecture document for migrating Django Oscar to microservices. Include:
 
@@ -242,12 +258,14 @@ Base everything on actual Django Oscar codebase analysis.
 ```
 # Test with OpenAI
 /provider openai
-/mode plan
+# Use Build mode (default - no mode switching needed)
+# Build mode allows file creation for documentation
 What are the main risks of migrating Django Oscar to microservices and how would you mitigate them?
 
 # Test with Anthropic
 /provider anthropic  
-/mode plan
+# Use Build mode (default - no mode switching needed)
+# Build mode allows file creation for documentation
 What are the main risks of migrating Django Oscar to microservices and how would you mitigate them?
 
 # Compare the responses - which gives better strategic thinking?
@@ -261,7 +279,8 @@ What are the main risks of migrating Django Oscar to microservices and how would
 
 #### Prompt 10: Strategic Planning Session
 ```
-/mode plan
+# Use Build mode (default - no mode switching needed)
+# Build mode allows file creation for documentation
 
 I'm leading the technical architecture for scaling Django Oscar from 10,000 to 100,000 concurrent users. The current monolith is hitting performance limits.
 

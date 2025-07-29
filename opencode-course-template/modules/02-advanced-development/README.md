@@ -4,8 +4,18 @@
 
 **Duration**: 3 weeks, 30 hours total  
 **Prerequisites**: Module 1 completed - working OpenCode.ai with multi-provider setup  
-**Target**: Master Plan and Build modes for complex development tasks  
+**Target**: Master Build mode and advanced techniques for complex development tasks  
 **Objective**: Transform from basic AI usage to sophisticated development workflows
+
+## 🚨 **Critical: Build Mode Usage for Advanced Developers**
+
+**This module teaches Build mode exclusively** because:
+- ✅ **Build mode allows file editing and creation** - essential for real development
+- ✅ **Full tool access** - can read, write, modify, and execute code
+- ✅ **Professional workflow** - matches how developers actually work
+- ❌ **Plan mode is read-only** - cannot create or modify files (not suitable for coding)
+
+**Key Understanding**: Advanced developers need to create and modify files, so Build mode is the only practical choice for professional development.
 
 ## 🔄 Module 1 Refresher & Validation
 
@@ -45,29 +55,29 @@ You should now have:
 
 ## 🎯 Module 2 Learning Path
 
-### **Week 3: Plan Mode Mastery**
+### **Week 3: Architecture & Planning with Build Mode**
 
 #### Lesson 2.1: Architecture Planning with AI (4 hours)
-- Use Plan mode to design complex system architectures
-- Practice with real microservices architecture planning
-- Learn provider selection for different planning tasks
-- **Outcome**: Design complete e-commerce system architecture using AI
+- Use Build mode to design and document complex system architectures
+- Practice with real microservices architecture planning and documentation creation
+- Learn provider selection for different architectural tasks
+- **Outcome**: Design complete e-commerce system architecture with generated documentation files
 
 #### Lesson 2.2: Feature Planning & Requirements Analysis (3 hours)  
-- Transform business requirements into technical specifications
-- Use AI for breaking down complex features into implementable tasks
+- Transform business requirements into technical specifications using Build mode
+- Use AI to break down complex features and create implementation files
 - Practice with real product requirements from open-source projects
-- **Outcome**: Complete technical specification for user authentication system
+- **Outcome**: Complete technical specification with generated documentation and code templates
 
 #### Exercise 2.1: Microservices Architecture Planning (5 hours)
 - Take existing monolithic application (Django-CMS, Spree, or PrestaShop)
-- Plan complete microservices migration using Plan mode
+- Plan complete microservices migration using Build mode to create documentation and code templates
 - Create professional architecture documentation with AI assistance
-- **Outcome**: Implementation-ready architecture specification for enterprise migration
+- **Outcome**: Implementation-ready architecture specification with generated files for enterprise migration
 
-### **Week 4: Build Mode Implementation**
+### **Week 4: Advanced Implementation**
 
-#### Lesson 2.3: Direct Code Implementation with Build Mode (4 hours)
+#### Lesson 2.3: Direct Code Implementation (4 hours)
 - Master Build mode for complex code generation and refactoring
 - Practice with Ghost CMS modernization (200,000+ lines)
 - Learn callback-to-async conversion and multi-file context management
@@ -116,10 +126,10 @@ You should now have:
 
 Students must demonstrate:
 
-- **✅ Plan Mode Mastery**: Design complex system architectures using AI assistance
-- **✅ Build Mode Proficiency**: Implement features and refactor code effectively
+- **✅ Architecture Design Mastery**: Design complex system architectures using Build mode with file creation
+- **✅ Advanced Implementation**: Implement features and refactor code effectively with full Build mode capabilities
 - **✅ Advanced Prompting**: Use sophisticated techniques for complex development tasks
-- **✅ Large Codebase Navigation**: Work efficiently with 10,000+ line projects
+- **✅ Large Codebase Navigation**: Work efficiently with 10,000+ line projects using Build mode
 - **✅ Production Readiness**: Code quality and practices suitable for real-world use
 
 ## 🛠️ Real Codebases Used

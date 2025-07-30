@@ -12,6 +12,8 @@ By the end of this lesson, you will:
 
 ## 🎥 **Video: OpenCode.ai First Connection** (1 minute)
 
+[![OpenCode.ai First Connection](../../videos/module-1/lesson-1-2-first-connection.mp4)](../../videos/module-1/lesson-1-2-first-connection.mp4)
+
 **What You'll See**: Live demonstration of connecting to multiple AI providers and testing each one
 **Key Learning Points**: 
 - Testing OpenAI and Anthropic connections
@@ -19,6 +21,7 @@ By the end of this lesson, you will:
 - Verifying multi-provider setup works correctly
 
 **Video Content**: [`videos/module-1/lesson-1-2-first-connection.txt`](../../videos/module-1/lesson-1-2-first-connection.txt)
+**Generated Video**: [`videos/module-1/lesson-1-2-first-connection.mp4`](../../videos/module-1/lesson-1-2-first-connection.mp4)
 
 **Follow Along**: Complete your own provider setup and test connections
 
@@ -94,6 +97,8 @@ opencode
 
 ## 🎥 **Video: Build Mode vs Plan Mode** (1 minute)
 
+[![Build Mode vs Plan Mode](../../videos/module-1/lesson-1-2-build-mode-demo.mp4)](../../videos/module-1/lesson-1-2-build-mode-demo.mp4)
+
 **What You'll See**: Critical difference between Plan mode (read-only) and Build mode (file editing)
 **Key Learning Points**: 
 - Why Plan mode is limited for real development
@@ -101,6 +106,7 @@ opencode
 - Professional development requires Build mode
 
 **Video Content**: [`videos/module-1/lesson-1-2-build-mode-demo.txt`](../../videos/module-1/lesson-1-2-build-mode-demo.txt)
+**Generated Video**: [`videos/module-1/lesson-1-2-build-mode-demo.mp4`](../../videos/module-1/lesson-1-2-build-mode-demo.mp4)
 
 **Professional Tip**: Always use Build mode for development work - Plan mode is only for analysis!
 

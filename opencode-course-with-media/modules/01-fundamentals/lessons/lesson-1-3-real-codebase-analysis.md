@@ -29,6 +29,8 @@ opencode
 
 ## 🎥 **Video: FastAPI Codebase Analysis** (1 minute)
 
+[![FastAPI Codebase Analysis](../../videos/module-1/lesson-1-3-fastapi-analysis.mp4)](../../videos/module-1/lesson-1-3-fastapi-analysis.mp4)
+
 **What You'll See**: Live analysis of a 25,000 line production codebase in under 30 seconds
 **Key Learning Points**: 
 - AI-powered codebase understanding
@@ -36,6 +38,7 @@ opencode
 - Navigation to specific implementation details
 
 **Video Content**: [`videos/module-1/lesson-1-3-fastapi-analysis.txt`](../../videos/module-1/lesson-1-3-fastapi-analysis.txt)
+**Generated Video**: [`videos/module-1/lesson-1-3-fastapi-analysis.mp4`](../../videos/module-1/lesson-1-3-fastapi-analysis.mp4)
 
 **Real Impact**: Hours of manual exploration → 30 seconds of AI-guided discovery
 
